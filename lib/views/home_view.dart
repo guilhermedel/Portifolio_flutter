@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portifolio_flutter/widgets/custom_drawer.dart';
+import 'package:portifolio_flutter/widgets/custom_dynamic_form.dart';
 import 'package:provider/provider.dart';
 import '../controllers/theme_controller.dart';
 
@@ -20,10 +21,7 @@ class HomeView extends StatelessWidget {
       ),
       drawer: CustomDrawer(),
       body: Center(
-        child: Text(
-          'Troca de Tema',
-          style: Theme.of(context).textTheme.bodyLarge,
-        ),
+        child: CustomDynamicForm()
       ),
     );
   }
